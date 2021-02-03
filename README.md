@@ -1,3 +1,7 @@
+Live:https://zelayagonzalo.github.io/interactive-pricing-component/
+
+*Changed a bit the layout.
+
 # Frontend Mentor - Interactive pricing component
 
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
