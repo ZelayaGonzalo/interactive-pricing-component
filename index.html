@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
@@ -27,16 +27,16 @@
   <div class="container">
     <div class="frame">
       <div class="price">
-        <p class="pageviews"><span>100</span>k PAGEVIEWS</p>
-        <p class="priceamount"><span class="amount">$15.00</span>$ /month</p>
+        <p class="pageviews"><span id="current-amount">10k</span> PAGEVIEWS</p>
+        <p class="priceamount"><span class="amount">$</span><span class="amount" id="current-price">8</span>/month</p>
       </div>
       <div class="slider">
-        <input id="slider-bar" type="range" min="1" max="100">
+        <input id="slider-bar" type="range" min="1" max="5" value="1" oninput=sliderChange(event)>
       </div>
       <div class="billing-container">
         <p class="billing-text">Monthly Billing</p>
         <label class="switch billing-text">
-          <input type="checkbox">
+          <input type="checkbox" id="check-discount" oninput=toogleDiscount(event)>
           <span class="toogle round"></span>
         </label>
         <p class="billing-text"> Yearly Billing </p>
@@ -61,5 +61,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Zelaya Gonzalo</a>.
   </div>-->
+  <script src="script.js"></script>
 </body>
 </html>

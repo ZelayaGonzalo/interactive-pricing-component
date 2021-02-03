@@ -115,8 +115,8 @@ header{
         -webkit-appearance: none;
         appearance: none;
         border: none;
-        width: 30px; 
-        height: 30px;
+        width: 40px; 
+        height: 40px;
         background-color: $strong-cyan;
         background-image: url('images/icon-slider.svg');
         background-repeat: no-repeat;
@@ -129,8 +129,8 @@ header{
         -webkit-appearance: none;
         appearance: none;
         border: none;
-        width: 30px; 
-        height: 30px;
+        width: 40px; 
+        height: 40px;
         background-color: $strong-cyan;
         background-image: url('images/icon-slider.svg');
         background-repeat: no-repeat;
@@ -270,13 +270,21 @@ input[type="range"]::-moz-range-progress {
 
 
   @media (max-width: 600px){
+      .fullpage{
+          height: 100vh;
+          min-height: 100vh;
+      }
       header{
           position: relative;
-          padding-bottom: 20px;
+          padding-bottom: 15px;
+      }
+      .container{
+          height: auto;
+        padding-top: 20%;
+        padding-bottom: 5%;
       }
       .frame{
-          margin-top: 20px;
-          width: 80%;
+          width: 90%;
           height: 600px;
       }
 
